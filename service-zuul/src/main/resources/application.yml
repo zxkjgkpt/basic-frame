@@ -14,10 +14,10 @@ zuul:
   routes:
     api-a:
       path: /api-a/**
-      serviceId: service-feign
+      serviceId: feign-example
     api-b:
       path: /api-b/**
-      serviceId: service-feign
+      serviceId: feign-example
 #ribbon请求连接的超时时间
 ribbon:
   ConnectTimeout: 4000
