@@ -15,4 +15,5 @@ spring:
           searchPaths: '{application}-config'
           username: 568777035@qq.com
           password: zjs568777035
+          basedir: /tmp/config-resources
       label: master
