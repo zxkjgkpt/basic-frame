@@ -1,7 +1,7 @@
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://localhost:8761/eureka/
+      defaultZone: http://@eureka.instance.hostname@:8761/eureka/
 server:
   port: 8762
 spring:
@@ -11,9 +11,9 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/zxkjgkpt/config-resources/
+          uri: @config.server.git.uri@
           searchPaths: '{application}-config'
-          username: 568777035@qq.com
-          password: zjs568777035
-          basedir: /tmp/config-resources
+          username: @config.server.git.username@
+          password: @config.server.git.password@
+          basedir: @config.server.git.basedir@
       label: master

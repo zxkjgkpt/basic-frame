@@ -3,3 +3,8 @@ server:
 
 spring:
   profiles: peer1
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://@eureka.instance.hostname@:8761/eureka/
